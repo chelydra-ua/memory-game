@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles.css" />
         <title>Memory Game</title>
     </head>
+
     <body>
-        <div class="container">
-            <div class="stats">
-                <div class="stats__moves-counter"></div>
-                <div class="stats__timer"></div>
+        <div id="loader"></div>
+        <div id="box">
+            <div class="img-con">
+                <img src="https://i.postimg.cc/J7c0S9kb/anaconda.png" />
+                <img src="https://i.postimg.cc/25Z8GJYL/bee.png" />
+                <img src="https://i.postimg.cc/tR5RBWKk/chameleon.png" />
+                <img src="https://i.postimg.cc/bNmJwkLr/cockatoo.png" />
+                <img src="https://i.postimg.cc/dVD0k3SB/crocodile.png" />
+                <img src="https://i.postimg.cc/ZRzYMcY7/gorilla.png" />
+                <img src="https://i.postimg.cc/tTdRQxYX/macaw.png" />
+                <img src="https://i.postimg.cc/mk8bhWYJ/monkey.png" />
+                <img src="https://i.postimg.cc/NjVj1t3w/piranha.png" />
+                <img src="https://i.postimg.cc/bNyrP3x4/sloth.png" />
+                <img src="https://i.postimg.cc/qqkJkv32/tiger.png" />
+                <img src="https://i.postimg.cc/VvRNMC87/toucan.png" />
             </div>
-            <div class="game"></div>
-            <button id="stop" class="hide">Stop Game</button>
-        </div>
-        <div class="controls-container">
-            <p class="result"></p>
-            <button id="start">Start Game</button>
+            <div class="wrapper">
+                <div class="stats-container">
+                    <div id="movesCount"></div>
+                    <div id="time"></div>
+                </div>
+                <div class="game-container"></div>
+                <button id="stop" class="hide">Stop Game</button>
+            </div>
+            <div class="controls-container">
+                <p id="result"></p>
+                <button id="start">Start Game</button>
+            </div>
         </div>
         <script src="./script.js"></script>
     </body>
